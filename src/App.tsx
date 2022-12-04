@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Core
+import { Routes, Route } from 'react-router-dom';
+// Pages
+import QuotesListPage from './components/pages/QuotesListPage';
+import RandomQuotePage from './components/pages/RandomQuotePage';
+// Styles
+import './assets/style/style.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<Routes>
+			<Route path="/" element={<QuotesListPage />} />
+			<Route path="/random-quote" element={<RandomQuotePage />} />
+		</Routes>
+	);
+};
 
 export default App;

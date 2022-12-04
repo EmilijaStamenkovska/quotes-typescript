@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 25px;
+    white-space: nowrap;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 40px;
+    background-color: var(--color-background);
+    color: var(--color-black);
+    opacity: 0.78;
+}
